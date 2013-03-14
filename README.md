@@ -1,4 +1,4 @@
 android-egood-test
 ==================
 
-testing egood login/checkin/posting for android
+Testing egood login/checkin/posting for android
