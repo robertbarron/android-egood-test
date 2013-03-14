@@ -1,0 +1,102 @@
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        tools:context=".MainEgood" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="center" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:src="@drawable/egood_image"
+                        android:textAlignment="gravity" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_marginBottom="30dp" >
+
+                    <EditText
+                        android:id="@+id/phone_or_email"
+                        style="@style/edit_text_login"
+                        android:layout_height="80dp"
+                        android:layout_weight=".70"
+                        android:background="@drawable/edit_text"
+                        android:gravity="left"
+                        android:hint="Username or Email"
+                        android:inputType="text"
+                        android:paddingTop="18dp"
+                        android:textSize="30sp" >
+
+                        <requestFocus />
+                    </EditText>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp" >
+
+                    <EditText
+                        android:id="@+id/passwd"
+                        style="@style/edit_text_login"
+                        android:layout_height="80dp"
+                        android:layout_weight=".70"
+                        android:background="@drawable/edit_text"
+                        android:gravity="left"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingTop="18dp"
+                        android:textSize="30sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_weight=".70"
+                        android:layout_height="80dp"
+                        android:text="Sign In"
+						android:background="@drawable/gradient" 
+						style="@style/ButtonText"
+					/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
